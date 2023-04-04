@@ -8,3 +8,12 @@ footer{
     width: 100%;
     text-align: center;
 }
+.nav-item .active {
+    background-color: rgb(182, 231, 231);
+}
+.navbar-brand .p-2 .active{
+    background-color: rgb(182, 231, 231);
+}
+.carousel-item {
+    max-height: 800px;
+  }

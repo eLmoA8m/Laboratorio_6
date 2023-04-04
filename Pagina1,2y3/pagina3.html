@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animales en peligro de extinción</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../Css/estilos.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand p-2" href="../index.html">Animales en México</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina1.html">Animales en peligro de extinción</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pagina2.html">Reptiles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Coati</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <strong>Hola!!!</strong> Da click en los botones "ver mas, para ver información sobre el coati del cerro de la silla de Nuevo León".
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+    <div class="container">
+        <h2>Conoce más sobre los coatis</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card">
+                    <img src="../Imagenes/coati.jpg"  class="card-img-top" alt="Imagen de un coati">
+                    <div class="card-body">
+                        <h5 class="card-title">Descripción</h5>
+                        <p class="card-text">El coati es un animal mamífero de la familia de los prociónidos,
+                            parecido a un tejón o una marta. Su cuerpo es alargado y tiene una cola larga y peluda.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalDescripcion">
+                            Leer más
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card">
+                    <img src="../Imagenes/Teliferico.jpg" height="250px" class="card-img-top" alt="Imagen de un coati">
+                    <div class="card-body">
+                        <h5 class="card-title">Hábitat</h5>
+                        <p class="card-text">Los coatis se encuentran en diversos hábitats, desde selvas y bosques
+                            hasta zonas desérticas. Su rango de distribución va desde el suroeste de Estados Unidos
+                            hasta Argentina. Sin embargo, también es bien sabido que en el cerro de la silla hay a
+                            montones.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalHabitat">
+                            Leer más
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card">
+                    <img src="../Imagenes/comida.jpg" class="card-img-top" alt="Imagen de un coati">
+                    <div class="card-body">
+                        <h5 class="card-title">Alimentación</h5>
+                        <p class="card-text">Los coatis son omnívoros y se alimentan de una gran variedad de alimentos,
+                            incluyendo frutas, insectos, huevos, pequeños vertebrados y carroña..</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalAlimentacion">
+                            Leer más
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal Habitat -->
+        <div class="modal fade" id="modalHabitat" tabindex="-1" aria-labelledby="modalDescripcionLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalDescripcionLabel">Descripción del coati</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        El hábitat de los coatis nariz blanca del Cerro de la Silla, en México, es principalmente el
+                        bosque tropical y subtropical, aunque también se pueden encontrar en bosques de pino y encino.
+                        En esta zona, se encuentran en altitudes que van desde los 300 hasta los 1,500 metros sobre el
+                        nivel del mar.
+
+                        Estos coatis habitan en áreas montañosas con pendientes pronunciadas, cañones y arroyos, y
+                        prefieren zonas boscosas con un denso sotobosque. Además, se adaptan bien a hábitats modificados
+                        por humanos, como áreas urbanas, cultivos y pastizales.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Modal Descripción -->
+        <div class="modal fade" id="modalDescripcion" tabindex="-1" aria-labelledby="modalDescripcionLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalDescripcionLabel">Descripción del coati</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>El coati nariz blanca del Cerro de la Silla (Nasua narica goldmani) es una subespecie de
+                            coati nariz blanca (Nasua narica) que habita en la zona montañosa del Cerro de la Silla,
+                            ubicado en el estado de Nuevo León, en México.
+
+                            Es similar en apariencia al coati nariz blanca común, pero su tamaño es ligeramente más
+                            pequeño y su pelaje es más oscuro y espeso. Tiene un hocico largo y móvil con una nariz
+                            rosada, que es su rasgo distintivo. Su cuerpo es delgado y flexible, con patas largas y
+                            garras curvas para trepar árboles.
+
+                            Los coatis nariz blanca del Cerro de la Silla son animales diurnos y viven en grupos
+                            llamados bandas, que pueden estar compuestos por hasta 20 individuos. Se alimentan de una
+                            variedad de alimentos, incluyendo frutas, insectos, huevos y pequeños vertebrados.
+
+                            Aunque no se considera una especie en peligro de extinción, su población se encuentra
+                            amenazada por la destrucción de su hábitat natural debido a la urbanización y la
+                            agricultura, así como por la caza furtiva y el comercio de mascotas. Es importante tomar
+                            medidas de conservación para asegurar la supervivencia de esta especie única y hermosa.</p>
+                        <p>Existen varias especies de coatis, incluyendo el coati de nariz blanca, el coati de nariz
+                            negra, el coati de montaña y el coati solitario. En México, se encuentra el coati de nariz
+                            blanca (Nasua narica), que habita en selvas, bosques y zonas rocosas de la costa del
+                            Pacífico y del Golfo de México.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Modal Alimentación-->
+        <div class="modal fade" id="modalAlimentacion" tabindex="-1" aria-labelledby="modalDescripcionLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalDescripcionLabel">Descripción del coati</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Los coatis de México del Cerro de la Silla son animales omnívoros y su dieta es bastante
+                            variada. Se alimentan principalmente de frutos, semillas, insectos, pequeños vertebrados y
+                            huevos de aves. También pueden comer reptiles, anfibios, pequeños mamíferos y carroña.
+
+                            Al ser animales oportunistas, se adaptan fácilmente a su entorno y a los recursos
+                            disponibles. En áreas urbanas, pueden encontrar alimentos en basureros o en las calles,
+                            mientras que en áreas naturales suelen buscar frutas y bayas en los árboles y en el suelo,
+                            además de buscar insectos y pequeños animales en el suelo y en los troncos de los árboles.
+                            El día de hoy, yo y mi
+                            grupo de amigos vimos unos coatis comiendo unos chetos flamin hot del piso, por lo que no
+                            creo que tengan límite en lo que comen
+
+                            Los coatis del Cerro de la Silla tienen un importante papel en el ecosistema, ya que ayudan
+                            a controlar la población de insectos y roedores, además de dispersar las semillas de las
+                            frutas que consumen, contribuyendo así a la regeneración de los bosques y selvas.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <br><br>
+<h1 class="text-center">03/04/2023</h1>
+<br><br>
+
+    <!-- Slider - Caroussel Bootsrap -->
+    <div id="carouselExampleDark" class="carousel carousel-white slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="../Imagenes/mia1.jpg" class="d-block mx-auto w-50" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Fotos de hoy con los coatis</h5>
+
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="../Imagenes/mia2.jpg" class="d-block mx-auto w-50" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Fotos de hoy con los coatis</h5>
+
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <footer>
+        <div class="container text-center">
+            <p">Carlos Omar Ramírez coronado 1908082</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
